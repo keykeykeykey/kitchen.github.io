@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20a08028-758c-4777-a14e-7ec607ab014e" name="Default" comment="" />
+    <ignored path="bookstore.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="bookstore" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.45724908">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.382287">
+                  <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+                  <folding>
+                    <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+                    <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="category-template.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-includes/category-template.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.861111">
+                  <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-includes/post.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.861111">
+                  <caret line="1617" column="9" selection-start-line="1617" selection-start-column="9" selection-end-line="1617" selection-end-column="9" />
+                  <folding>
+                    <marker date="1451678062000" expanded="true" signature="55007:55023" placeholder="Insert into post... " />
+                    <marker date="1451678062000" expanded="true" signature="55033:55049" placeholder="Insert into page... " />
+                    <marker date="1451678062000" expanded="true" signature="79088:79172" placeholder="SELECT post_... $" />
+                    <marker date="1451678062000" expanded="true" signature="81108:81259" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="81429:81522" placeholder="SELECT COUNT... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="87249:87289" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="88695:88763" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="89063:89140" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="89592:89657" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+                    <marker date="1451678062000" expanded="true" signature="89850:89904" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+                    <marker date="1451678062000" expanded="true" signature="94492:94575" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+                    <marker date="1451678062000" expanded="true" signature="96497:96580" placeholder="UPDATE ${$wp... " />
+                    <marker date="1451678062000" expanded="true" signature="114756:114797" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="125368:125444" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="126495:126630" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="127726:127821" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="138040:138085" placeholder="SELECT pinge... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="139608:139653" placeholder="SELECT pinge... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="140223:140269" placeholder="SELECT to_pi... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="141701:141753" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="143685:143825" placeholder="SELECT ID, p... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="145308:145406" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="145467:145544" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="157475:157533" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="161652:161692" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="162810:162875" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+                    <marker date="1451678062000" expanded="true" signature="163069:163123" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+                    <marker date="1451678062000" expanded="true" signature="163690:163809" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+                    <marker date="1451678062000" expanded="true" signature="185190:185335" placeholder="SELECT post_... " />
+                    <marker date="1451678062000" expanded="true" signature="185394:185535" placeholder="SELECT post_... " />
+                    <marker date="1451678062000" expanded="true" signature="185635:185829" placeholder="SELECT DATE_... " />
+                    <marker date="1451678062000" expanded="true" signature="196574:196684" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+                    <marker date="1451678062000" expanded="true" signature="198224:198280" placeholder="SELECT ${$wp... ${$wpdb-&gt;posts}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="plugin.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-includes/plugin.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="456" column="9" selection-start-line="456" selection-start-column="9" selection-end-line="456" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page-apost.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-apost.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-17.722221">
+                  <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/header.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-59.61111">
+                  <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.8055556">
+                  <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myjavascript.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.36422414">
+                  <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="category-1.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/category-1.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="173.36111">
+                  <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/themes/theme1/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/theme1/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/ajax_post.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/page-ajax_post.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/demo/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/demo/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/demo/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/page-food.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/page-apost.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/page-storage.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/style.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/category-1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1358" />
+    <option name="y" value="-517" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twenty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style.less" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twenty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookstore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twenty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\node\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\amp\up\upupw\htdocs\bookstore\wp-content\themes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\amp\up\upupw\htdocs\bookstore" />
+      <recent name="F:\amp\up\upupw\htdocs\bookstore\wp-content\themes\demo" />
+      <recent name="F:\amp\up\upupw\htdocs\bookstore\wp-content\themes\twenty" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20a08028-758c-4777-a14e-7ec607ab014e" name="Default" comment="" />
+      <created>1458946648784</created>
+      <option name="number" value="Default" />
+      <updated>1458946648784</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1358" y="-517" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/category-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="406" column="65" selection-start-line="406" selection-start-column="65" selection-end-line="406" selection-end-column="65" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="855" column="39" selection-start-line="855" selection-start-column="39" selection-end-line="855" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="414" column="83" selection-start-line="414" selection-start-column="83" selection-end-line="414" selection-end-column="83" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="855" column="39" selection-start-line="855" selection-start-column="39" selection-end-line="855" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-apost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="32" selection-start-line="142" selection-start-column="32" selection-end-line="258" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="855" column="39" selection-start-line="855" selection-start-column="39" selection-end-line="855" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="10" selection-start-line="160" selection-start-column="6" selection-end-line="175" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-apost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="838" column="25" selection-start-line="838" selection-start-column="25" selection-end-line="838" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.1931407">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfifteen/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.666667">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfourteen/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.257576">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.861111">
+          <caret line="367" column="9" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/js/xfn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.666667">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0562913">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-food.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4242425">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/taxonomy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25055188">
+          <caret line="905" column="9" selection-start-line="905" selection-start-column="9" selection-end-line="905" selection-end-column="9" />
+          <folding>
+            <marker date="1453239328000" expanded="true" signature="26962:27189" placeholder="SELECT tr.ob... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="34201:34343" placeholder="SELECT t.*, ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="55046:55129" placeholder="SELECT ${$di... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="63704:63747" placeholder="SELECT term_... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="63767:63898" placeholder="SELECT tt.te... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="64826:64995" placeholder="SELECT tt.te... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="65092:65266" placeholder="SELECT tt.te... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="65358:65418" placeholder="SELECT term_... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="65505:65570" placeholder="SELECT term_... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="76808:76884" placeholder="SELECT term_... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="77966:78041" placeholder="SELECT objec... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="78824:78878" placeholder="SELECT meta_... ${$wpdb-&gt;termmeta}" />
+            <marker date="1453239328000" expanded="true" signature="79505:79565" placeholder="SELECT COUNT... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="86476:86710" placeholder="SELECT ${$se... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="87918:88143" placeholder="SELECT tr.te... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="94205:94233" placeholder="SELECT MAX(t... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="96698:96853" placeholder="SELECT tt.te... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="97546:97775" placeholder="SELECT t.ter... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="101906:102007" placeholder="SELECT term_... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="102993:103112" placeholder="SELECT tt.te... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="103763:103934" placeholder="INSERT INTO ${$wpdb-&gt;term_relationships}... " />
+            <marker date="1453239328000" expanded="true" signature="106685:106780" placeholder="DELETE FROM " />
+            <marker date="1453239328000" expanded="true" signature="109715:109778" placeholder="SELECT slug ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="109844:109889" placeholder="SELECT slug ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="110061:110106" placeholder="SELECT slug ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="113799:113827" placeholder="SELECT MAX(t... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="115115:115270" placeholder="SELECT tt.te... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="116914:116989" placeholder="SELECT objec... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="123523:123609" placeholder="SELECT term_... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="131664:131931" placeholder="SELECT objec... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="134069:134403" placeholder="SELECT COUNT... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="134268:134330" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+            <marker date="1453239328000" expanded="true" signature="134493:134728" placeholder="SELECT COUNT... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="135577:135651" placeholder="SELECT COUNT... ${$wpdb-&gt;term_relationships}" />
+            <marker date="1453239328000" expanded="true" signature="137980:138076" placeholder="SELECT COUNT... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="138436:138504" placeholder="SELECT term_... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="138769:138820" placeholder="SELECT t.* F... ${$wpdb-&gt;terms}" />
+            <marker date="1453239328000" expanded="true" signature="139527:139589" placeholder="SELECT * FRO... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="139672:139757" placeholder="SELECT term_... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="140391:140451" placeholder="SELECT taxon... ${$wpdb-&gt;term_taxonomy}" />
+            <marker date="1453239328000" expanded="true" signature="141164:141361" placeholder="SELECT tt.te... $" />
+            <marker date="1453239328000" expanded="true" signature="143065:143263" placeholder="SELECT tt.te... $" />
+            <marker date="1453239328000" expanded="true" signature="143992:144068" placeholder="SELECT * FRO... $" />
+            <marker date="1453239328000" expanded="true" signature="147111:147513" placeholder="SELECT m1.po... $" />
+            <marker date="1453239328000" expanded="true" signature="150197:150257" placeholder="SELECT COUNT... ${$wpdb-&gt;term_taxonomy}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65964913">
+          <caret line="2213" column="9" selection-start-line="2213" selection-start-column="9" selection-end-line="2213" selection-end-column="9" />
+          <folding>
+            <marker date="1451899168000" expanded="true" signature="51203:51385" placeholder="SELECT YEAR(... " />
+            <marker date="1451899168000" expanded="true" signature="52277:52412" placeholder="SELECT YEAR(... " />
+            <marker date="1451899168000" expanded="true" signature="53177:53421" placeholder="SELECT YEAR(... " />
+            <marker date="1451899168000" expanded="true" signature="54389:54627" placeholder="SELECT DISTI... " />
+            <marker date="1451899168000" expanded="true" signature="56069:56127" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+            <marker date="1451899168000" expanded="true" signature="58430:58525" placeholder="SELECT 1 as ${$wpdb-&gt;posts}" />
+            <marker date="1451899168000" expanded="true" signature="59763:59977" placeholder="SELECT MONTH... " />
+            <marker date="1451899168000" expanded="true" signature="60006:60237" placeholder="SELECT MONTH... " />
+            <marker date="1451899168000" expanded="true" signature="60413:60554" placeholder="..." />
+            <marker date="1451899168000" expanded="true" signature="60548:60554" placeholder="..." />
+            <marker date="1451899168000" expanded="true" signature="60999:61005" placeholder="..." />
+            <marker date="1451899168000" expanded="true" signature="61808:61814" placeholder="..." />
+            <marker date="1451899168000" expanded="true" signature="61907:62142" placeholder="SELECT DISTI... ${$wpdb-&gt;posts}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65964913">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/post-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9132321">
+          <caret line="219" column="9" selection-start-line="219" selection-start-column="9" selection-end-line="219" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/nav-menu-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31453362">
+          <caret line="250" column="3" selection-start-line="250" selection-start-column="3" selection-end-line="250" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3172646">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-59.61111">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="456" column="9" selection-start-line="456" selection-start-column="9" selection-end-line="456" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/theme.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.345987">
+          <caret line="301" column="9" selection-start-line="301" selection-start-column="9" selection-end-line="301" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/page-apost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.722221">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8055556">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.861111">
+          <caret line="1617" column="9" selection-start-line="1617" selection-start-column="9" selection-end-line="1617" selection-end-column="9" />
+          <folding>
+            <marker date="1451678062000" expanded="true" signature="55007:55023" placeholder="Insert into post... " />
+            <marker date="1451678062000" expanded="true" signature="55033:55049" placeholder="Insert into page... " />
+            <marker date="1451678062000" expanded="true" signature="79088:79172" placeholder="SELECT post_... $" />
+            <marker date="1451678062000" expanded="true" signature="81108:81259" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="81429:81522" placeholder="SELECT COUNT... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="87249:87289" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="88695:88763" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="89063:89140" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="89592:89657" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+            <marker date="1451678062000" expanded="true" signature="89850:89904" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+            <marker date="1451678062000" expanded="true" signature="94492:94575" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+            <marker date="1451678062000" expanded="true" signature="96497:96580" placeholder="UPDATE ${$wp... " />
+            <marker date="1451678062000" expanded="true" signature="114756:114797" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="125368:125444" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="126495:126630" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="127726:127821" placeholder="SELECT post_... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="138040:138085" placeholder="SELECT pinge... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="139608:139653" placeholder="SELECT pinge... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="140223:140269" placeholder="SELECT to_pi... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="141701:141753" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="143685:143825" placeholder="SELECT ID, p... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="145308:145406" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="145467:145544" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="157475:157533" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="161652:161692" placeholder="SELECT * FRO... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="162810:162875" placeholder="SELECT comme... ${$wpdb-&gt;comments}" />
+            <marker date="1451678062000" expanded="true" signature="163069:163123" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+            <marker date="1451678062000" expanded="true" signature="163690:163809" placeholder="SELECT meta_... ${$wpdb-&gt;postmeta}" />
+            <marker date="1451678062000" expanded="true" signature="185190:185335" placeholder="SELECT post_... " />
+            <marker date="1451678062000" expanded="true" signature="185394:185535" placeholder="SELECT post_... " />
+            <marker date="1451678062000" expanded="true" signature="185635:185829" placeholder="SELECT DATE_... " />
+            <marker date="1451678062000" expanded="true" signature="196574:196684" placeholder="SELECT ID FR... ${$wpdb-&gt;posts}" />
+            <marker date="1451678062000" expanded="true" signature="198224:198280" placeholder="SELECT ${$wp... ${$wpdb-&gt;posts}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/category-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="173.36111">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/category-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.861111">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.382287">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <marker date="1459309541463" expanded="true" signature="2163:8943" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2266:3910" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2343:3243" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2435:3183" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2508:2661" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2744:2891" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="2974:3120" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3321:3854" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="3508:3790" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4005:8893" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4086:7023" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4186:6201" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4271:4456" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4550:6126" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4635:6043" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4728:5069" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="4740:4971" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5178:5519" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5190:5421" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5612:5953" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="5624:5855" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6288:6473" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6560:6715" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="6802:6956" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7105:7665" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7300:7597" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7746:8834" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="7839:8766" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8066:8411" placeholder="..." />
+            <marker date="1459309541463" expanded="true" signature="8515:8690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twenty/js/myjavascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36422414">
+          <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
