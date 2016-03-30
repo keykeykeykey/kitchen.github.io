@@ -1,11 +1,11 @@
 <?php
 
-function get_post_array($type)
+function get_post_array($type,$num)
 {
     $args = array(
         'post_type' => 'post',
         'category_name' => $type,
-        'numberposts' => -1,
+        'numberposts' => $num,
         'orderby' => 'modified'
     );
     $result = get_posts($args);
@@ -23,7 +23,6 @@ function get_child($type){
             $mes=get_category($value);
             $parentName=get_cat_name($mes->parent);
 //        $parent=get_category_parents($value);获得所有的父类
-//        var_dump($mes);
             if($mes->parent!=1){
                 $arr[$parentName][]=$mes->cat_name;
             }
@@ -41,28 +40,37 @@ function ajax_parent($childs){
     $arr[][]='';
     foreach($childs as $i){
         $p_id=get_category_by_slug($i)->parent;
+//        $c_id=get_category_by_slug($i)->cat_ID;
+        $p=get_category_parents($p_id);
         $arr[$p_id][]=$i;
     }
-
-//   $parent=get_category_parents($c_id);
-
+//has_category()
     return $arr;
 }
 
 
+$arr[]='';
 function topost(){
     session_start();
     $cate=$_GET['checkValue'];
+    $max_show=$_GET['show'];
     $_SESSION['checkValue']=$cate;
     $str=gettype($cate);
 //    $arr_cate=ajax_parent($cate);
-//    var_dump($arr_cate);
-    $arr[]='';
+
+    $arr=arr_li_content($cate,$max_show);
+    $json_obj=json_encode($arr);
+    print_r($json_obj);
+    exit;
+
+
+
+
+}
+function arr_li_content($cate,$max_show){
 
     foreach($cate as $c){
-        $result=get_post_array($c);
-
-
+        $result=get_post_array($c,$max_show);
         foreach($result as $key=>$i){
             $indexImg=get_field('indexImg', $i->ID);
             $price=get_field('price',$i->ID);
@@ -170,14 +178,10 @@ function topost(){
 
     ";
         }
+
     }
 
-    $json_obj=json_encode($arr);
-   print_r($json_obj);
-    exit;
-}
-function choose(){
-
+    return $arr;
 }
 add_action('wp_ajax_topost','topost');
 //add_action('wp_ajax_nopriv_topost','topost');

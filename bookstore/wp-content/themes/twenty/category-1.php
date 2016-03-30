@@ -8,7 +8,6 @@
  */
 session_start();
 get_header();
-var_dump(ajax_parent());
 ?>
 
 <div class="food" id="foodStorage">
@@ -102,17 +101,12 @@ var_dump(ajax_parent());
                                     }
                                     ?>
                                 </select>
-                                Mostar
+                                Montrer
                                 <select class="max-show" id="max-show">
-                                    <option value="">--</option>
+                                    <option value="9">9</option>
+                                    <option value="3">3</option>
+                                    <option value="45">45</option>
 
-                                    <?php
-                                    for($i=0;$i<3;$i++){
-                                        ?>
-                                        <option value=""><?php echo eval(9+$i)?></option>
-                                        <?php
-                                    }
-                                    ?>
                                 </select>
 
                             </div>
@@ -128,9 +122,8 @@ var_dump(ajax_parent());
                                 <a>< Previo</a>
                                 <a>Siguiente ></a>
                                 <ul>
-                                    <li><button>1</button></li>
-                                    <li><button>2</button></li>
-                                    <li><button>3</button></li>
+
+
                                 </ul>
 
                             </div>
@@ -144,8 +137,7 @@ var_dump(ajax_parent());
                             <div class="row">
                                 <ul class="container-ul">
                                     <?php
-                                    $result=get_post_array('storrage');
-//                                    var_dump($result);
+                                    $result=get_post_array('storrage',9);
                                     foreach ($result as $i){
                                         ?>
                                         <li class="col-md-4">

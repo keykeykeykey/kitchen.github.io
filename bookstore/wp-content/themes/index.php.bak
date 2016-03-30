@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<!--    -->
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta name="google-site-verification" content="J2bUj-bCKhwhcJSqmL3Y_v3ylSflBPZsFD1E1kEaqs8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+ <meta name="Description" content="{dede:global.cfg_description/}">
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" type="text/css">
+</head><body><div id="seoquake-seobar-mainblock" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0); position: relative; top: 0pt; left: 0pt; float: left; margin: 0pt; padding: 0pt; width: auto; z-index: 1000;"></div><div style="clear: both; margin: 0pt; padding: 0pt;" id="seoquake-seobar-clearblock"></div>
+
+
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="1003">
+  <tbody><tr>
+    <td><img src="<?php bloginfo('template_directory'); ?>/style/top.jpg" alt="蜂王浆的作用" usemap="#Map" border="0" height="128" width="1003"></td>
+  </tr>
+</tbody></table>
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="1003">
+  <tbody><tr>
+    <td background="<?php bloginfo('template_directory'); ?>/style/cdbg.jpg" height="36" valign="top">  <td width="1010" height="36" valign="top" background="<?php bloginfo('template_directory'); ?>/style/cdbg.jpg"><span class="menu"><div id="cd"><a href="/">首页</a> {dede:channel type='top' row='4'} <a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel}</div></span></td></td>
+  </tr>
+</tbody></table>
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="1003">
+  <tbody><tr>
+    <td align="center" valign="top">
+	<div class="line"></div>
+<div class="left">
+	  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td class="tit1">商品分类</td>
+        </tr>
+        <tr>
+          <td class="tit1-" align="center"><a href="sub.html?1" target="_blank" class="a1">2010新鲜特级蜂王浆</a><a href="sub.html?2" target="_blank" class="a1">油菜有机蜂王浆</a><a href="sub.html?3" target="_blank" class="a1">蜂王浆冻干胶囊</a><a href="sub.html?4" target="_blank" class="a1">纯天然蜂皇浆</a><a href="sub.html?5" target="_blank" class="a1">出口级油菜鲜蜂王浆</a><a href="sub.html?6" target="_blank" class="a1">油菜春浆</a></td>
+        </tr>
+      </tbody></table>
+	  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td class="tit1">蜂皇浆最新文章</td>
+        </tr>
+        <tr>
+          <td class="tit1-" align="left">
+ <div class="wenzhang">
+  {dede:arclist row='10' titlelen='25'  typeid='0'}
+            <LI><a href="[field:arcurl/]">[field:title/]</a></LI>            
+            {/dede:arclist}
+<div class="clear"></div>                   
+   </div></td>
+        </tr>
+      </tbody></table>
+	  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td class="tit1">蜂皇浆热门文章</td>
+        </tr>
+        <tr>
+          <td class="tit1-" align="left">
+ <div class="wenzhang">
+   {dede:arclist  titlelen='25' row='10' orderby='hot'
+     <LI><a href="[field:arcurl/]">[field:title/]</a></LI>
+  {/dede:arclist}
+  </div></td>
+        </tr>
+      </tbody></table>
+	  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+          <td class="tit1">蜂皇浆随机文章</td>
+        </tr>
+        <tr>
+          <td class="tit1-" align="left">
+          <div class="wenzhang">
+            {dede:arclist row=10  orderby='rand' titlelen='25'}
+            <LI><a href="[field:arcurl/]">[field:title/]</a></LI>            
+            {/dede:arclist} 
+          </div>
+          </td>
+        </tr>
+      </tbody></table>
+	</div>
+	</td>
+    <td class="ybj" align="left" valign="top" width="761"><div class="line"></div>
+      <table border="0" cellpadding="0" cellspacing="0" width="745">
+        <tbody><tr>
+          <td class="f14s" align="left" height="50" valign="middle"><img src="<?php bloginfo('template_directory'); ?>/<?php bloginfo('template_directory'); ?>/style/new2.jpg" alt="蜂王浆的吃法"></td>
+        </tr>
+        <tr>
+          <td align="left"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+              <td><p><strong>1、蜂王浆有非常好的美容美白润肤作用，可以促进新陈代谢，调节内分泌，排毒养颜，有消除黄褐斑的作用服用一个月您会感觉到自己变年轻了很多</strong></p>
+                <p><strong>2、蜂王浆可以做面膜，用蜂王浆做面膜十分钟后你会感觉到脸非常非常的细腻润滑，每天做面膜直至一个月，你会感觉到面色明显增白，斑点淡化消失</strong></p>
+                <p><strong>3、蜂王浆可以益脑，是增强记忆力佳品，与蜂蜜一起服用可消除疲劳，如果你的工作压力很大推荐使用。</strong></p>
+                <p><strong>4、蜂王浆能使人体衰老组织活化，加快新细胞的增长，从而达到延缓衰老的作用。蜂王浆可增强人的基础体力，服后食欲好，精神好，气色佳，很大程度上增强人的体质和免疫能力，还可提高睡眠，特别推荐老年人长期服用</strong></p>
+                <p><strong>5、蜂王浆对血压有很好的调节作用</strong></p>
+<font size="2" face="宋体"><strong>              </strong></font></td>
+              </tr>
+          </tbody></table></td>
+        </tr>
+      </tbody></table>
+    <div class="line"></div>
+    <table class="tab2" border="0" cellpadding="0" cellspacing="0" width="745">
+      <tbody><tr>
+        <td class="tit3" align="left" valign="middle">蜂产品展示</td>
+      </tr>
+      <tr>
+        <td class="pp2" align="left">{dede:include filename="ad.html"/}</td>
+      </tr>
+    </tbody></table>
+    <div class="line"></div>
+    <table border="0" cellpadding="0" cellspacing="0" width="745">
+      <tbody><tr>
+        <td align="left" height="56" valign="middle"><img src="<?php bloginfo('template_directory'); ?>/style/new1.jpg" alt="蜂王浆" height="36" width="136"></td>
+      </tr>
+      <tr>
+        <td class="f14" align="left"><strong>科学家们总结了蜂产品的九大效用：镇静安眠（改善睡眠质量）、调节血压、护肝防癌、健脑益智、延年益寿（提高免疫力）、美容护肤、滋补神经、加强造血功能。并将  其广泛的应用于以下疾病：老年综合症、营养不良、食欲不振、糖尿病、血管及血液系统疾病、神经系统疾病、调节肝脏功能、抑制肿瘤、（增加白细胞）风湿性关  节炎、前列腺炎（对于性生活的提高有很好的帮助）。</strong><br>
+          </td>
+      </tr>
+      <tr>
+        <td align="left" height="10"></td>
+      </tr>
+    </tbody></table>
+    <table class="tab2" border="0" cellpadding="0" cellspacing="0" width="745">
+      <tbody><tr>
+        <td class="tit3" align="left" valign="middle">友情链接</td>
+      </tr>
+      <tr>
+        <td class="pp" align="left"><div id="flinksabc">
+        <ul style="list-style-type:none;">{dede:flink type='text' row='26'/}
+        </ul></div></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="1003">
+  <tbody><tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td class="down" align="center" bgcolor="#71b721"><font color="#222020">版权所有：<a href="http://www.fengwang.info" target="_blank">蜂王浆的吃法</a> | <a href="http://www.fengwang.info" target="_blank">蜂王浆的作用与功效</a> | <a href="http://www.fengwang.info" target="_blank">蜂王浆怎么吃</a> | <a href="http://www.fengwang.info" target="_blank">蜂皇浆</a> | <a href="http://www.fengwang.info" target="_blank">蜂王浆</a> | <script src="http://s11.cnzz.com/stat.php?id=2556359&web_id=2556359&show=pic" language="JavaScript"></script></font></p>
+
+
+
+</td>
+  </tr>
+</tbody></table>
+
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="921,6,980,26" href="#" onclick='this.style.behavior="url(#default#homepage)"/'>
+  <area shape="rect" coords="27,29,249,105" href="http://www.fengwang.info/" alt="蜂王浆">
+<area shape="rect" coords="844,6,903,26" href="#" onclick="window.external.AddFavorite(location.href,document.title)"></map>
+<div style="position: absolute; display: none; z-index: 9999;" id="livemargins_control"><img src="<?php bloginfo('template_directory'); ?>/style/monitor-background-horizontal.png" alt="蜂王浆的作用" style="position: absolute; left: -77px; top: -5px;" height="5" width="77">	<img src="<?php bloginfo('template_directory'); ?>/style/monitor-background-vertical.png" alt="蜂王浆的作用" style="position: absolute; left: 0pt; top: -5px;">	<img id="monitor-play-button" src="<?php bloginfo('template_directory'); ?>/style/monitor-play-button.png" alt="蜂王浆的吃法" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5" style="position: absolute; left: 1px; top: 0pt; opacity: 0.5; cursor: pointer;"></div></body></html>

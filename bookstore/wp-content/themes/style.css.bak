@@ -1,0 +1,51 @@
+body {background:url(sytle/bg.jpg) repeat-x #FFCC00;margin: 0px;}
+td{font-family:Arial, Helvetica, sans-serif,ËÎÌו; font-size:12px; color:#2f2f2f; line-height:170%;}
+a{color:#2f2f2f; text-decoration:none;}
+a:hover{color:#1E3B00;}
+.a1{background:url(sytle/title1.jpg) no-repeat;width:171px; height:34px; color:#000; font-weight:bold; font-size:14px; display:block; padding:8px 0 0;}
+.a1:hover{background:url(sytle/title2.jpg) no-repeat;}
+#cd {margin:0 0 0 20px;}
+#cd a{color:#000; background:url(sytle/cd1.jpg); width:96px; height:23px; display:block; float:left; text-align:center; padding:8px 0 0;}
+#cd a:hover{color:#fff; font-weight:bold;background:url(sytle/cd2.jpg); font-size:13px;}
+#cd .a{color:#fff; font-weight:bold;background:url(sytle/cd2.jpg); font-size:13px;}
+.ybj{background:url(sytle/top2.jpg) no-repeat;}
+.left{border:1px #9BB380 solid; padding:5px; width:208px;}
+.line{height:10px; overflow:hidden;}
+.tit1{background:url(sytle/left1.jpg) no-repeat; height:28px; text-align:left; color:#1E3B00; font-weight:bold; padding:0 0 0 10px; display:block; font-size:14px;}
+.tit1-{background:url(sytle/left2.jpg) no-repeat; padding:15px 10px;}
+.tit2{background:url(sytle/tit1.jpg) no-repeat; height:26px; text-align:left; color:#fff; font-weight:bold; padding:0 0 0 10px; display:block; font-size:14px;}
+.tit3{background:url(sytle/tit2.jpg) no-repeat; height:26px; text-align:left; color:#fff; font-weight:bold; padding:0 0 0 10px; display:block; font-size:14px;}
+.f14{font-size:14px;}
+.f14s {font-size:14px; font-weight:bold;}
+.down{color:#fff; padding:10px 0 10px 242px; text-align:left;}
+.pp {padding:15px;}
+.pp2 {padding:15px 15px 0;}
+.tab{border:1px #9BB380 solid; background:#F2F8EA;}
+.tab2{border:1px #9BB380 solid; background:#fff;}
+.cp {border:1px #ccc solid; padding:4px; width:210px; display:block; margin:0 0 2px;}
+.cp2{ width:210px;padding:5px; display:block; margin:0 0 15px; text-align:center;}
+.nei{width:712px; overflow:hidden;}
+#t6{line-height:35px; background:url(sytle/line3x35.gif);}
+#t7{line-height:22px; height:22px; overflow:hidden; }
+#t7 ul li{ float:left;  overflow:hidden;}
+#t7 a{ color:#006600;}
+h1{margin:0; padding:0; font-size:16px; color:#f30; font-weight:bold;}
+.t1{ padding:5px 0 10px; text-align:center; width:202px; height:20px; overflow:hidden;}
+#t2{  width:200px; height:26px; overflow:hidden; line-height:26px;}
+.clear{ clear:both; overflow:hidden; height:1px;}
+
+.wenzhang{ width:190px; font-size:13px;}
+.wenzhang ul li{ float:left; width:210px; overflow:hidden; LIST-STYLE-TYPE: none;}
+.wenzhang a{ color:#006600;}
+
+
+.sq{border-top:1px dotted #cecece;}
+.box{width:100%;overflow:hidden;margin-bottom:6px;}
+
+#flinksabc li{ 
+ float:left; 
+ padding-left:10px;}
+ 
+#flinksabc ul{
+clear:both;
+}

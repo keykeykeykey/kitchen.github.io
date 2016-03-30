@@ -2,10 +2,14 @@
  * Created by Administrator on 2016/3/21.
  */
 $(function(){
+    $('#max-show').change(function(){
+        select_change($(this));
+    })
     $('input:checkbox').change(function(){
         $hiddenVal=$('.hiddenbox').val();
         $parent=$('.parent_box').val();
-        check_box($(this),$hiddenVal,$parent);
+        $max_show=$('#max-show option:selected').val();
+        check_box($(this),$hiddenVal,$max_show);
     })
     $(".more-big").click(function(){
         enlarge_img($(this));
@@ -38,6 +42,10 @@ $(function(){
         add_sublist($(".search-box"),$(".search"),$(this),$(this));
     })
 })
+function select_change(e){
+    $hiddenVal=$('.hiddenbox').val();
+    ajax_fix($hiddenVal, e.val());
+}
 function add_sublist(a,e,c,d){
     if(d){
         if(c.css('display')=="none" && d.css('display')=="none"){
@@ -156,10 +164,11 @@ function enlarge_img(e){
     })
 }
 var check_arr=[];
-function check_box(e,hid,p){
+
+function check_box(e,hid,max_show){
     if(e.is(':checked')){
         check_arr.push(e.val());
-        ajax_fix(hid);
+        ajax_fix(hid,max_show);
         $(".select-panel").show();
         $str="<div class='add' id='"+e.val()+"'>"+e.val()+"</div>"
         $(".class-list").append($str);
@@ -171,10 +180,9 @@ function check_box(e,hid,p){
         for(var times=0;times<check_arr.length;times++){
             if(check_arr[times]== e.val()){
                 check_arr.splice(times,1);
-
+                ajax_fix(hid,max_show);
             }else{
                 console.log("times"+ check_arr[times]);
-                ajax_fix(hid);
             }
         }
         $("#"+$val).remove();
@@ -185,22 +193,59 @@ function check_box(e,hid,p){
         }
     }
 }
-function ajax_fix(hid){
+function ajax_fix(hid,max_show,page){
+    for(var a=0;a<check_arr.length;a++){
+        console.log(check_arr[a]);
+    }
+    if(hid==""||hid==null){
+        hid='http://localhost/bookstore/wp-admin/admin-ajax.php';
+    }
+    if(max_show==""||max_show==null){
+        max_show=$('#max-show option:selected').val();
+    }
+    if(page==""||page==null){
+       page=1;
+    }
+
     $ajreturn= $.ajax({
         url:hid,
         type:"GET",
         datatType:"json",
         data:{
             action:'topost',
-            checkValue: check_arr
+            checkValue: check_arr,
+            show:max_show
         },
         success:function(data){
-            console.log(data);
-            //var res=eval('('+data+')');
+            console.log(hid);
+            var res=eval('('+data+')');
             var res=JSON.parse(data);
             $(".pro-img-old").find("li").remove();
-            for(var i=0;i<res.length;i++){
+
+           console.log("max-show"+max_show);
+            var max;
+            var but_num=1;
+            if(max_show>res.length){
+
+                max=res.length;
+
+            }else{
+                max=max_show;
+                but_num=Math.ceil(res.length/max_show);
+            }
+            $(".pro-img-old").find("li").remove();
+            $(".pro-img-old").find("li").remove();
+            console.log("page:"+page);
+            var post_count=eval(page-1)*max;
+            var post_counts=page*max;
+
+            for(var i=post_count;i<post_counts;i++){
                 $(".pro-img-old").find('.container-ul').append(res[i]);
+            }
+            $(".center").find('li').remove();
+            for(var j=0;j<but_num;j++){
+                $str="<li><button onclick=ajax_fix('','',"+eval(j+1)+")>"+eval(j+1)+"</button></li>";
+                $(".center").find('ul').append($str);
             }
         },
         error:function(){

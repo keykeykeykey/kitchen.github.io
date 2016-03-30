@@ -65,7 +65,7 @@
             <div class="row">
                 <ul>
                     <?php
-                    $result=get_post_array('popular');
+                    $result=get_post_array('popular',12);
                     foreach ($result as $i){
                         ?>
                         <li class="col-md-3">
