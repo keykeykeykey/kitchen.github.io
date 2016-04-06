@@ -177,15 +177,15 @@
             <div class="row">
                 <ul>
                     <?php
-                    for($i=0;$i<12;$i++){
+                    $result=get_post_array('new',12);
+                    foreach ($result as $i){
                         ?>
-
                         <li class="col-md-3">
                             <div class="content-container" id="content-container">
                                 <div class="left-block">
                                     <div class="product-img-container">
                                         <a href="#">
-                                            <img src="<?php bloginfo('template_url')?>/images/new_a_1.jpg">
+                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
                                         </a>
                                         <div class="new-sale">
                                             NOUVEAU
@@ -196,7 +196,7 @@
                                 <div class="right-block">
                                     <h5>EXPANDABLE_BAMBOOGADG_DAFDFFD</h5>
                                     <div class="content-price">
-                                        <span class="pro-price">$24.00</span>
+                                        <span class="pro-price"><?php the_field('price',$i->ID) ?></span>
                                         <span class="old-price">$30.00</span>
                                     </div>
 
@@ -209,20 +209,20 @@
                                 <div class="left-block">
                                     <div class="product-img-container">
                                         <a href="#">
-                                            <img src="<?php bloginfo('template_url')?>/images/new_a_1.jpg">
+                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
                                         </a>
                                         <div class="sub-img">
                                             <ul>
                                                 <li><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/new_a_2.jpg">
+                                                        <img src="<?php  the_field('small1', $i->ID);?>">
                                                     </a>
                                                 </li>
                                                 <li class="sec-img"><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/new_a_3.jpg">
+                                                        <img src="<?php  the_field('small2', $i->ID);?>">
                                                     </a>
                                                 </li>
                                                 <li><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/new_a_4.jpg">
+                                                        <img src="<?php  the_field('small3', $i->ID);?>">
                                                     </a>
                                                 </li>
                                             </ul>
@@ -252,11 +252,20 @@
 
                                         </div>
                                         <div class="comments-note">
-                                            <div class="star-on"></div>
-                                            <div class="star-on"></div>
-                                            <div class="star-on"></div>
-                                            <div class="star-off"></div>
-                                            <div class="star-off"></div>
+                                            <?
+                                            for($n=0;$n<get_field('star',$i->ID);$n++){
+                                                ?>
+                                                <div class="star-on"></div>
+                                                <?php
+                                            }
+                                            for($m=0;$m<(5-get_field('star',$i->ID));$m++){
+                                                ?>
+                                                <div class="star-off"></div>
+                                                <?php
+                                            }
+
+                                            ?>
+
                                         </div>
                                     </div>
 

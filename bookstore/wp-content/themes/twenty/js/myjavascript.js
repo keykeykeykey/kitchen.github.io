@@ -41,7 +41,41 @@ $(function(){
     $(".close").click(function(){
         add_sublist($(".search-box"),$(".search"),$(this),$(this));
     })
+    $(".add-list").find('span').click(function(){
+        show_cate_list($(this));
+    })
+    menu_click();
+    ajax_fix();
 })
+function menu_click(){
+    $type=$('#cate_name').val();
+
+    $child=$(".menu-kitchen-container").find("a");
+    $child.each(function(){
+        if($type==$(this).html()){
+            $(this).addClass("active");
+        }
+        else{
+
+        }
+    })
+}
+function show_cate_list(e){
+    if(e.parent().find(".food-subcate").css('display')=="none"){
+        e.parent().find(".food-subcate").css('display','block');
+        e.html("-");
+    }else{
+        e.parent().find(".food-subcate").css('display','none');
+        e.html("+");
+    }
+}
+function page_button(e){
+    console.log("cilck");
+    e.css({
+        "background":"#ED7743",
+        "color":"white"
+    })
+}
 function select_change(e){
     $hiddenVal=$('.hiddenbox').val();
     ajax_fix($hiddenVal, e.val());
@@ -166,15 +200,16 @@ function enlarge_img(e){
 var check_arr=[];
 
 function check_box(e,hid,max_show){
+
     if(e.is(':checked')){
         check_arr.push(e.val());
-        ajax_fix(hid,max_show);
         $(".select-panel").show();
         $str="<div class='add' id='"+e.val()+"'>"+e.val()+"</div>"
         $(".class-list").append($str);
         $(".add").click(function(){
             $(this).remove();
         })
+        ajax_fix(hid,max_show);
     }else{
         $val= e.val();
         for(var times=0;times<check_arr.length;times++){
@@ -194,8 +229,17 @@ function check_box(e,hid,max_show){
     }
 }
 function ajax_fix(hid,max_show,page){
-    for(var a=0;a<check_arr.length;a++){
-        console.log(check_arr[a]);
+
+     var type=$('#type').val();
+    if(check_arr.length==0){
+        check_arr.push(type);
+    }
+    else if(check_arr.length==2){
+        for(var a=0;a<check_arr.length;a++){
+           if(check_arr[a]==type){
+              check_arr.splice(a,1);
+           }
+        }
     }
     if(hid==""||hid==null){
         hid='http://localhost/bookstore/wp-admin/admin-ajax.php';
@@ -206,21 +250,23 @@ function ajax_fix(hid,max_show,page){
     if(page==""||page==null){
        page=1;
     }
-
+    console.log(check_arr);
+    console.log(hid);
     $ajreturn= $.ajax({
         url:hid,
         type:"GET",
         datatType:"json",
         data:{
+            checkvalue:check_arr,
             action:'topost',
-            checkValue: check_arr,
-            show:max_show
+            show:-1
         },
         success:function(data){
-            console.log(hid);
+            console.log(data);
+
             var res=eval('('+data+')');
             var res=JSON.parse(data);
-            $(".pro-img-old").find("li").remove();
+            $(".food-img-list").find("li").remove();
 
            console.log("max-show"+max_show);
             var max;
@@ -233,20 +279,29 @@ function ajax_fix(hid,max_show,page){
                 max=max_show;
                 but_num=Math.ceil(res.length/max_show);
             }
-            $(".pro-img-old").find("li").remove();
-            $(".pro-img-old").find("li").remove();
-            console.log("page:"+page);
+            $(".food-img-list").find("li").remove();
             var post_count=eval(page-1)*max;
             var post_counts=page*max;
+            $(".center").find("a").remove();
+
+            $(".center").append("<a class='pre' onclick=ajax_fix('','',"+eval(page-1)+")>< Previo</a>");
 
             for(var i=post_count;i<post_counts;i++){
-                $(".pro-img-old").find('.container-ul').append(res[i]);
+                $(".food-img-list").find('.container-ul').append(res[i]);
             }
             $(".center").find('li').remove();
             for(var j=0;j<but_num;j++){
-                $str="<li><button onclick=ajax_fix('','',"+eval(j+1)+")>"+eval(j+1)+"</button></li>";
-                $(".center").find('ul').append($str);
+                if(eval(j+1)==page){
+
+                    $str="<li><button class='but_onclick' onclick=ajax_fix('','',"+eval(j+1)+")>"+eval(j+1)+"</button></li>";
+                    $(".center").find('ul').append($str);
+                }else{
+                    $str="<li><button  onclick=ajax_fix('','',"+eval(j+1)+")>"+eval(j+1)+"</button></li>";
+                    $(".center").find('ul').append($str);
+                }
             }
+            $(".center").append("<a class='next' onclick=ajax_fix('','',"+eval(page+1)+")> Siguiente ></a>");
+
         },
         error:function(){
             console.log('error');
@@ -254,3 +309,12 @@ function ajax_fix(hid,max_show,page){
     })
 
 }
+
+
+/******
+ *
+ *
+ *
+ *
+ *
+ * ****/

@@ -8,7 +8,9 @@
  */
 session_start();
 get_header();
+
 ?>
+
 
 <div class="food" id="foodStorage">
     <div class="content">
@@ -32,6 +34,8 @@ get_header();
                                         $type='storrage';
                                         $parent=get_child($type);
                                         foreach ($parent as $key=>$p){
+                                            if($key=='Availability'||$key=='category'||$key=='Manufacturer')
+                                            {
                                             ?>
                                             <div class="cate-title"><?php  echo $key;?></div>
                                             <?php
@@ -46,12 +50,84 @@ get_header();
                                                     </div>
                                                 </li>
                                                 <?php
-
+                                                }
                                             }
                                         }
                                         ?>
 
                                     </ul>
+                                </div>
+                                <div class="price-bar">
+                                    <h5>Precio</h5>
+                                    <div class="price-range">Range:$4.00-$90.00</div>
+                                    <input type="range">
+                                </div>
+                            </div>
+                            <div class="food-storage">
+                                <div class="title">FOOD STORAGE</div>
+                                <ul class="cate-list">
+                                    <?php
+                                    $parent=get_child('category');
+                                    foreach($parent as $k=>$v){
+                                        if($k!='category'){
+                                        ?>
+                                        <li class="add-list" ><a><?php echo $k;?></a><span>+</span>
+                                            <ul class="food-subcate">
+                                        <?php    foreach($v as $key=>$value){
+                                                    if($value!=null&&$value!=""){
+                                                ?>
+                                                   <li><a> <  <?php echo $value; ?></a></li>
+                                        <?php
+                                                }
+                                            }
+                                        ?></ul></li><?php
+                                        }
+                                    }
+                                    ?>
+                                </ul>
+                            </div>
+                            <div class="wishlist">
+                                <div class="list">WISHLIST</div>
+                                <div class="desc">No produce</div>
+                                <a>My wishlists<span> > </span></a>
+                            </div>
+                            <div class="information">
+                                <div class="list">INFORNATION</div>
+                                <div class="infor-list"></div>
+                            </div>
+                            <div class="new-product">
+                                <div class="list">NEW PRODUCT</div>
+                                <div class="new-list">
+                                    <ul>
+                                        <?php
+                                        $result=get_post_array('new',8);
+                                        foreach ($result as $i){
+                                            ?>
+                                            <li>
+                                                <div class="content-container" >
+                                                    <div class="left-block">
+                                                        <div class="product-img-container">
+                                                            <a href="#">
+                                                                <img src="<?php  the_field('small1', $i->ID);?>">
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="info"><a>EXPANDABLE_BAMBOOGADG</a></div>
+                                                        <div class="detail">Kitchen Supplies store was founded
+                                                            by several enthusiasts in 2002.Those are menifng</div>
+                                                        <div class="content-price">
+                                                            <span class="pro-price"><?php the_field('price',$i->ID) ?></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <?php
+                                        }
+                                        ?>
+                                    </ul>
+
                                 </div>
                             </div>
                         </section>
@@ -59,31 +135,47 @@ get_header();
                     </div>
                     <div class="right-block col-md-9">
                         <div class="recommand-pro">
+                            <?php
+                            $result=get_post_array('recommend');
+                            foreach($result as $r){
+                              $boo=  has_category('storrage',$r);
+                                if($boo){
+
+                                ?>
                             <div class="left">
-                                <img src="<?php bloginfo('template_url')?>/images/food_1.jpg">
+                                <img src="<?php the_field('recommang_pic', $r->ID); ?>">
                             </div>
                             <div class="right">
-                                <h3>Food Storage</h3>
-                                <label>Kitchen Supplies store was founded by several enthusiasts in 2002. Those were the times when people still preferred to buy products at brick-and-mortar stores instead of buying online. Nevertheless we’ve decided to create an online shop and we are so glad to welcome you here,
-                                    at our online Kitchen Supplies store. Yes, we agree that selling food ...</label>
+                                <h3><?php $id = 1;echo get_cat_name($id) ?></h3>
+                                <label><?php the_field('recommend_text', $r->ID); ?></label>
                             </div>
+                            <?php
+                                }
+                            }
+                            ?>
                         </div>
                         <div class="title">
                             <div class="left">
                                 <h3>FOOD STORAGE</h3>
                             </div>
                             <div class="right">
-                                Hay 20 productos
+                                Hay <?php var_dump(get_count('storrage')); ?> productos
                             </div>
                         </div>
                         <div class="subcategorias">
                             <div class="sub-title">Subcategorias</div>
                             <ul>
                                 <?php
-                                for($i=0;$i<5;$i++){
-                                    ?>
-                                    <li><a><div class="img"><img src="<?php bloginfo('template_url')?>/images/food2.jpg"></div> OVEN MITTTS</a></li>
-                                    <?php
+                                $parent=get_child('category');
+                                foreach($parent as $p=> $k){
+                                    if($p=='category'){
+                                        foreach($k as $key=> $value){
+                                        $result=get_post_array($value,1);
+                                       ?>
+                                       <li><a><div class="img"> <img src="<?php  the_field('small1', $result[0]->ID);?>"></div> <?php echo  strtoupper($value) ?></a></li>
+                                       <?php
+                                       }
+                                   }
                                 }
                                 ?>
                             </ul>
@@ -106,7 +198,6 @@ get_header();
                                     <option value="9">9</option>
                                     <option value="3">3</option>
                                     <option value="45">45</option>
-
                                 </select>
 
                             </div>
@@ -116,131 +207,22 @@ get_header();
                         </div>
                         <div class="pages">
                             <div class="left">
-                                Mostrando 1 - 9 de 20 items
+                                Resultats 1-9 sur 20
                             </div>
                             <div class="center">
-                                <a>< Previo</a>
-                                <a>Siguiente ></a>
                                 <ul>
-
-
                                 </ul>
-
                             </div>
                             <div class="right">
-                                <button>Mosrar todos</button>
+                                <button>Afificher tout</button>
                                 <button>Comparar(0) > </button>
                             </div>
 
                         </div>
-                        <section class="pro-img-old">
+                        <section class="food-img-list">
                             <div class="row">
                                 <ul class="container-ul">
-                                    <?php
-                                    $result=get_post_array('storrage',9);
-                                    foreach ($result as $i){
-                                        ?>
-                                        <li class="col-md-4">
-                                            <div class="content-container" id="content-container">
-                                                <div class="left-block">
-                                                    <div class="product-img-container">
-                                                        <a href="#">
-                                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
-                                                        </a>
-                                                        <div class="new-sale">
-                                                            NOUVEAU
-                                                        </div>
-                                                        <div class="hot-sale">
-                                                            PROMO！
-                                                        </div>
-                                                    </div>
 
-                                                </div>
-                                                <div class="right-block">
-                                                    <h5>EXPANDABLE_BAMBOOGADG_DAFDFFD</h5>
-                                                    <div class="content-price">
-                                                        <span class="pro-price"><?php the_field('price',$i->ID) ?></span>
-                                                        <span class="old-price">$30.00</span>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-
-                                            <div class="content-hide" id="content-hide">
-                                                <div class="left-block">
-                                                    <div class="product-img-container">
-                                                        <a href="#">
-                                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
-                                                        </a>
-                                                        <div class="sub-img">
-                                                            <ul>
-                                                                <li><a href="#">
-                                                                        <img src="<?php  the_field('small1', $i->ID);?>">
-                                                                    </a>
-                                                                </li>
-                                                                <li class="sec-img"><a href="#">
-                                                                        <img src="<?php  the_field('small2', $i->ID);?>">
-                                                                    </a>
-                                                                </li>
-                                                                <li><a href="#">
-                                                                        <img src="<?php  the_field('small3', $i->ID);?>">
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="more-big">
-                                                        <img src="<?php bloginfo('template_url')?>/images/search.png">
-                                                    </div>
-                                                    <div class="new-sale">
-                                                        NOUVEAU
-                                                    </div>
-                                                    <div class="hot-sale">
-                                                        PROMO！
-                                                    </div>
-                                                </div>
-                                                <div class="right-block">
-                                                    <h5>EXPANDABLE_BAMBOOGADG_DAFDFFD</h5>
-                                                    <div class="content-price">
-                                                        <span class="pro-price">$24.00</span>
-                                                        <span class="old-price">$30.00</span>
-                                                    </div>
-
-                                                </div>
-                                                <div class="wrap-block">
-                                                    <div class="outter-content">
-                                                        <p>Kitchen Supplies store was founded by switer</p>
-                                                        <div class="button-container">
-                                                            <a href="#"><span class="cart">ADD TO CART</span></a>
-                                                            <a href="#"><span class="more">MORE</span></a>
-
-                                                        </div>
-                                                        <div class="comments-note">
-                                                            <?
-                                                            for($n=0;$n<get_field('star',$i->ID);$n++){
-                                                                ?>
-                                                                <div class="star-on"></div>
-                                                                <?php
-                                                            }
-                                                            for($m=0;$m<(5-get_field('star',$i->ID));$m++){
-                                                                ?>
-                                                                <div class="star-off"></div>
-                                                                <?php
-                                                            }
-
-                                                            ?>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <?php
-                                    }
-                                    ?>
                                 </ul>
 
                             </div>

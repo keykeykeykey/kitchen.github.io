@@ -70,6 +70,7 @@
         </div>
 
     </div>
-
+    <input type="hidden" id="type" name="type" value="<?php $cate_slug=$wp->query_vars['category_name']; echo $cate_slug  ?>">
+    <input type="hidden" id="cate_name" name="type" value="<?php echo get_cate_name($cate_slug) ?>">
     </body>
     </html>

@@ -147,8 +147,14 @@
 .head .menu .container .row .menu-kitchen-container li a:hover {
   color: #ED7743;
 }
+.head .menu .container .row .menu-kitchen-container li a .active {
+  color: #ED7743;
+}
 .head .menu .container .row .menu-kitchen-container li:nth-of-type(4) {
   margin-left: -30px;
+}
+.head .menu .container .row .menu-kitchen-container li .active {
+  color: #ED7743;
 }
 .head .menu .container::after {
   content: "";
@@ -965,7 +971,7 @@
 }
 .food {
   background: #F6F6F6;
-  height: 2200px;
+  height: 3000px;
 }
 .food .content section.crumbs-nav {
   width: 1140px;
@@ -1048,6 +1054,179 @@
 }
 .food .content section.main-content .container .row .left-block section.catelog .sub-content .categories li .select-type input[type='checkbox']:hover {
   opacity: 1;
+}
+.food .content section.main-content .container .row .left-block section.catelog .sub-content .price-bar input[type='range'] {
+  -webkit-appearance: none;
+  height: 13px;
+  width: 220px;
+  border-radius: 5px;
+  background: #9ea7af;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #a2a2a2;
+}
+.food .content section.main-content .container .row .left-block section.catelog .sub-content .price-bar input[type='range']:focus {
+  outline: none;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage {
+  margin-top: 30px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .title {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage a {
+  text-decoration: none;
+  color: #5E5652;
+  display: inline-block;
+  border-bottom: 1px solid #C7C7C7;
+  height: 30px;
+  width: 270px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage a:hover {
+  color: #ED7743;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list {
+  color: #5E5652;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .food-subcate {
+  display: none;
+  opacity: 0.8;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .food-subcate li {
+  border: none;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .food-subcate li a {
+  color: #9a9a9a;
+  font-weight: 100;
+  border-bottom: 1px solid #C7C7C7;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .food-subcate li a:hover {
+  color: #ED7743;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .add-list {
+  font-weight: bold;
+  position: relative;
+}
+.food .content section.main-content .container .row .left-block section.catelog .food-storage .cate-list .add-list span {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  color: #5E5652;
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  top: 0;
+}
+.food .content section.main-content .container .row .left-block section.catelog .wishlist .list {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+}
+.food .content section.main-content .container .row .left-block section.catelog .wishlist .desc {
+  border: 1px solid #C7C7C7;
+  border-left: none;
+  border-right: none;
+  padding: 15px 0;
+}
+.food .content section.main-content .container .row .left-block section.catelog .wishlist a {
+  display: block;
+  width: 100px;
+  height: 27px;
+  margin-top: 15px;
+  background: #ED7743;
+  color: white;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .wishlist a span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.food .content section.main-content .container .row .left-block section.catelog .information {
+  margin: 20px 0;
+}
+.food .content section.main-content .container .row .left-block section.catelog .information .list {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #C7C7C7;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .list {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list {
+  float: none;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container {
+  clear: both;
+  border-bottom: 1px solid #C7C7C7;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .left-block {
+  float: left;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .left-block .product-img-container {
+  float: none;
+  padding: 20px 0;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .left-block .product-img-container a {
+  display: block;
+  width: 102px;
+  height: 102px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .left-block .product-img-container a img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #C7C7C7;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .left-block .product-img-container a img:hover {
+  border: 1px solid black;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block {
+  float: right;
+  height: 185px;
+  margin: 12px 0 0 10px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block .info {
+  width: 150px;
+  height: 45px;
+  margin-top: 5px;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block .info a {
+  word-wrap: break-word;
+  color: #4c4c4d;
+  font-weight: bold;
+  text-decoration: none;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block .info a:hover {
+  color: #ED7743;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block .detail {
+  width: 150px;
+  height: 80px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #4c4c4d;
+  font-weight: bold;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #5E5652;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.food .content section.main-content .container .row .left-block section.catelog .new-product .new-list .content-container .right-block .content-price {
+  margin-top: 10px;
+  color: #ED7743;
+  font-size: 18px;
 }
 .food .content section.main-content .container .row .right-block .recommand-pro .right {
   width: 630px;
@@ -1134,34 +1313,75 @@
 }
 .food .content section.main-content .container .row .right-block .pages .left {
   float: left;
+  font-size: 14px;
 }
 .food .content section.main-content .container .row .right-block .pages .center {
   float: left;
   width: 400px;
   height: 30px;
   overflow: inherit;
+  position: relative;
 }
 .food .content section.main-content .container .row .right-block .pages .center ul {
-  margin-top: -25px;
-  margin-left: 170px;
+  margin-top: -5px;
+  margin-left: 120px;
 }
 .food .content section.main-content .container .row .right-block .pages .center li {
   float: left;
   text-align: center;
 }
-.food .content section.main-content .container .row .right-block .pages .right {
-  float: right;
+.food .content section.main-content .container .row .right-block .pages .center li button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ADAEB7;
+  background: #F6F6F6;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old {
+.food .content section.main-content .container .row .right-block .pages .center li button:hover {
+  background: #ED7743;
+  color: white;
+}
+.food .content section.main-content .container .row .right-block .pages .center li .but_onclick {
+  color: white;
+  background: #ED7743;
+}
+.food .content section.main-content .container .row .right-block .pages .center a {
+  text-decoration: none;
+  color: black ;
+  font-weight: bold;
+}
+.food .content section.main-content .container .row .right-block .pages .center a:hover {
+  color: #ED7743;
+}
+.food .content section.main-content .container .row .right-block .pages .center .pre {
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: -1px;
+}
+.food .content section.main-content .container .row .right-block .pages .center .next {
+  display: block;
+  position: absolute;
+  right: 100px;
+  top: -1px;
+}
+.food .content section.main-content .container .row .right-block .pages .right button {
+  color: white;
+  background: #ED7743;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  height: 35px;
+}
+.food .content section.main-content .container .row .right-block section.food-img-list {
   clear: both;
   padding: 20px 0;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li {
   margin: 0 10px;
   width: 260px;
   background: white;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li .new-sale {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li .new-sale {
   width: 105px;
   height: 35px;
   opacity: 1;
@@ -1176,7 +1396,7 @@
   right: 0;
   cursor: pointer;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li .new-sale:after {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li .new-sale:after {
   content: "";
   width: 0;
   height: 0;
@@ -1187,7 +1407,7 @@
   right: 92px;
   top: 0px;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li .hot-sale {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li .hot-sale {
   width: 105px;
   height: 35px;
   opacity: 1;
@@ -1202,7 +1422,7 @@
   left: 0;
   cursor: pointer;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li .hot-sale:after {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li .hot-sale:after {
   content: "";
   width: 0;
   height: 0;
@@ -1213,9 +1433,9 @@
   left: 92px;
   top: 0px;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li:hover .content-container {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li:hover .content-container {
   opacity: 0;
 }
-.food .content section.main-content .container .row .right-block section.pro-img-old .row li:hover #content-hide {
+.food .content section.main-content .container .row .right-block section.food-img-list .row li:hover #content-hide {
   display: block;
 }

@@ -28,8 +28,8 @@ function get_child($type){
             }
         }
     }
-$arr=array_splice($arr,1);
-return $arr;
+    $arr=array_splice($arr,1);
+    return $arr;
 }
 register_nav_menus( array(
     'primary'   => __( '主菜单栏', 'easecloud' ),
@@ -51,24 +51,18 @@ function ajax_parent($childs){
 
 $arr[]='';
 function topost(){
-    session_start();
-    $cate=$_GET['checkValue'];
-    $max_show=$_GET['show'];
-    $_SESSION['checkValue']=$cate;
-    $str=gettype($cate);
-//    $arr_cate=ajax_parent($cate);
+    
 
+    session_start();
+    $cate=$_GET['checkvalue'];
+    $max_show=$_GET['show'];
+    $_SESSION['checkvalue']=$cate;
     $arr=arr_li_content($cate,$max_show);
     $json_obj=json_encode($arr);
     print_r($json_obj);
     exit;
-
-
-
-
 }
 function arr_li_content($cate,$max_show){
-
     foreach($cate as $c){
         $result=get_post_array($c,$max_show);
         foreach($result as $key=>$i){
@@ -180,9 +174,19 @@ function arr_li_content($cate,$max_show){
         }
 
     }
-
     return $arr;
 }
+function get_count($type){
+    $term=get_category_by_slug($type);
+    $result=get_the_category($term->term_id);
+    $back=$result->category_count;
+    var_dump($back);
+    return $back;
+}
+function get_cate_name($type){
+    $name=get_category_by_slug($type)->name;
+    return($name);
+}
 add_action('wp_ajax_topost','topost');
-//add_action('wp_ajax_nopriv_topost','topost');
+add_action('wp_ajax_nopriv_topost', 'topost');
 ?>
