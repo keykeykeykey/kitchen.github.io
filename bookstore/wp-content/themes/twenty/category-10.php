@@ -34,6 +34,7 @@ get_header();
                                         $type=$wp->query_vars['category_name'];
 //                                        $type=single_cat_title();
                                         $parent=get_child($type);
+                                        $_SESSION['parent']=$parent;
                                         foreach ($parent as $key=>$p){
                                             if($key=='Availability'||$key=='Manufacturer')
                                             {
