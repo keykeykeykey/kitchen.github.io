@@ -5,14 +5,11 @@ $(function(){
     $('#max-show').change(function(){
         select_change($(this));
     })
+    $hiddenVal=$('.hiddenbox').val();
     $('input:checkbox').change(function(){
-        $hiddenVal=$('.hiddenbox').val();
         $parent=$('.parent_box').val();
         $max_show=$('#max-show option:selected').val();
         check_box($(this),$hiddenVal,$max_show);
-    })
-    $(".more-big").click(function(){
-        enlarge_img($(this));
     })
 
     $(".left-block").find($(".hot-sale")).eq(2).remove();
@@ -37,18 +34,210 @@ $(function(){
     })
     $(".search").click(function(){
         add_sublist($(this),$(".search-box"),$(".seletor-money"),$(".seletor"));
+        $(".search-box").css({
+            "-moz-transform":"scale(1,1)",
+            "-webkit-transform":"scale(1,1)",
+            "-o-transform":"scale(1,1)",
+            "-webkit-transition":"all 0.3s ease-in-out",
+            "-moz-transition":"all 0.3s ease-in-out"
+
+        })
+        $(".close").show();
     })
     $(".close").click(function(){
-        add_sublist($(".search-box"),$(".search"),$(this),$(this));
+        $(".search-box").css({
+            "-moz-transform":"scale(0,0)",
+            "-webkit-transform":"scale(0,0)",
+            "-o-transform":"scale(0,0)",
+            "-webkit-transition":"all 0.3s ease-in-out",
+            "-moz-transition":"all 0.3s ease-in-out"
+
+        })
+        setTimeout( add_sublist($(".search-box"),$(".search"),$(this),$(this)),5000)
     })
     $(".add-list").find('span').click(function(){
         show_cate_list($(this));
     })
+    $(".center-block").mousemove(function(e){
+       check_pic($(this),e);
+    })
+    $(".center-block").mouseout(function(){
+        check_move_out($(this));
+    })
+    $(".nav-slidebar li").click(function(){
+        get_big_img($(this),$hiddenVal);
+    })
+    $(".left-block-nav li").click(function(){
+        change_information($(this));
+    })
+    $(".more-big").click(function(){
+        enlarge_img($(this));
+    })
+    $(".close-chat").click(function(){
+        close_chat($(this),-180);
+    })
+    $(".title").click(function(){
+        close_chat($(this),10);
+    })
+    change_information($(".left-block-nav li").eq(0));
     menu_click();
     ajax_fix();
+
 })
+function close_chat(e,w){
+    $(".chat").css({
+        'right':w,
+        "transition":"right 1.5s",
+        "-moz-transition":"right 1.5s",
+        "-webkit-transition":"right 1.5s",
+    })
+}
+function change_information(e){
+    var index= e.index();
+    if(index==0){
+        $(".info").show();
+        $(".data").hide();
+        e.parent().find("li").removeClass("active");
+        e.addClass("active");
+    }else{
+        $(".info").hide();
+        $(".data").show();
+        e.parent().find("li").removeClass("active");
+        e.addClass("active");
+    }
+
+}
+ var new_num=0;
+function next_product(){
+
+    if(new_num<14){
+        $(".pre").show()
+        var lists=$(".products").find("li");
+
+        lists.each(function(index,element){
+            if(new_num==index){
+                $(this).hide(600);
+            }
+        })
+        new_num++;
+    }
+    else{
+        $(".next-pro").hide();
+    }
+
+
+}
+function pre_product(){
+   if(new_num>0){
+
+       $(".next-pro").show();
+       new_num--;
+       var lists=$(".products").find("li");
+       lists.each(function(index,element){
+           if(new_num==index){
+               $(this).show(600);
+           }
+       })
+
+   }
+    else{
+       $(".pre").hide()
+   }
+}
+var scrolls=1;
+function next_silimar_product(){
+
+    if(scrolls<14){
+        $(".similar_p").show();
+        var w=216*scrolls;
+        var lists=$(".similars").find("li");
+        lists.each(function(index,element){
+            if(index==eval(scrolls-1)){
+                //$(this).css("margin-left",-w);
+                $(this).css({
+                    "margin-left":-w,
+                    "transition":"margin-left 1.5s",
+                    "-moz-transition":"margin-left 1.5s",
+                    "-webkit-transition":"margin-left 1.5s",
+                })
+            }
+        })
+        scrolls++;
+    }
+    else{
+        $(".similar_n").hide();
+    }
+}
+function pre_silimar_product(){
+    if(scrolls>0){
+        $(".similar_n").show();
+        scrolls--;
+        var w=216*scrolls;
+        var lists=$(".similars").find("li");
+        lists.each(function(index,element){
+            if(index==eval(scrolls-1)){
+                $(this).css({
+                    "margin-left":0,
+                    "transition":"margin-left 1s",
+                    "-moz-transition":"margin-left 1s",
+                    "-webkit-transition":"margin-left 1s",
+                })
+
+            }
+        })
+    }
+    else{
+        $(".similar_p").hide();
+    }
+
+}
+function get_big_img(e,hid){
+    $ajreturn= $.ajax({
+        url:hid,
+        type:"GET",
+        datatType:"html",
+        data:{
+            index: e.index(),
+            action:'get_pic',
+        },
+        success:function(datas){
+                    console.log(datas);
+            $(".center-block").find("img").remove();
+            $(".center-block").append(datas);
+
+                },
+        error:function(){
+            console.log('error');
+        }
+    })
+}
+function check_move_out(e){
+    e.find('img').css({"height":725,
+        "width":725,
+        "top":0,
+        "left":0})
+}
+function check_pic(e,pointer){
+    var x=pointer.pageX;
+    var y=pointer.pageY;
+    var o_x=x-250;
+    var o_y=y-350;
+    if(o_x>275){
+        o_x=275;
+    }
+    if(o_y>275){
+        o_y=275;
+    }
+    e.find('img').css({"height":1000,
+                        "width":1000,
+                        "top":-o_y,
+                        "left":-o_x})
+
+}
 function menu_click(){
     $type=$('#cate_name').val();
+
+
 
     $child=$(".menu-kitchen-container").find("a");
     $child.each(function(){
@@ -56,7 +245,7 @@ function menu_click(){
             $(this).addClass("active");
         }
         else{
-
+            console.log($(this).html());
         }
     })
 }
@@ -141,7 +330,9 @@ function pic_list(e){
 function  nav_seclete(e){
     e.style.display="none";
 }
-function enlarge_img(e){
+function enlarge_img(t){
+    console.log("mmmmm");
+    var e=$(t);
     $parent=e.parent();
     $child=$parent.find("img");
     $child1=$child.eq(0);
@@ -170,6 +361,7 @@ function enlarge_img(e){
         "border":"2px solid white",
         "font-size":"21px",
         "text-align":"center",
+        "z-index":100,
 
     })
     $("#show-img").css({
@@ -180,7 +372,8 @@ function enlarge_img(e){
         "background":"#5E5652",
         "top":0,
         "left":0,
-        "opacity":"0.9"
+        "opacity":"0.9",
+        "z-index":100,
 
     })
     $child2.css({
@@ -198,7 +391,6 @@ function enlarge_img(e){
     })
 }
 var check_arr=[];
-
 function check_box(e,hid,max_show){
 
     if(e.is(':checked')){
@@ -207,8 +399,17 @@ function check_box(e,hid,max_show){
         $str="<div class='add' id='"+e.val()+"'>"+e.val()+"</div>"
         $(".class-list").append($str);
         $(".add").click(function(){
-            $(this).remove();
+            //$(this).remove();
+            $("#"+ e.val()).remove();
+            e.attr("checked",false);
+            check_box(e,hid,max_show);
+            if($(".class-list").html()==""||$(".class-list").html()==null){
+
+                $(".s_title").hide();
+
+            }
         })
+        $(".s_title").show();
         ajax_fix(hid,max_show);
     }else{
         $val= e.val();
@@ -263,9 +464,10 @@ function ajax_fix(hid,max_show,page){
         },
         success:function(data){
             console.log(data);
-
-            var res=eval('('+data+')');
+            //die()
+;            //var res=eval('('+data+')');
             var res=JSON.parse(data);
+            //var res=data;
             $(".food-img-list").find("li").remove();
 
            console.log("max-show"+max_show);
@@ -300,7 +502,9 @@ function ajax_fix(hid,max_show,page){
                     $(".center").find('ul').append($str);
                 }
             }
+            $numbers=$(".center li").length;
             $(".center").append("<a class='next' onclick=ajax_fix('','',"+eval(page+1)+")> Siguiente ></a>");
+            $(".next").css("left",eval($numbers*30+130))
 
         },
         error:function(){

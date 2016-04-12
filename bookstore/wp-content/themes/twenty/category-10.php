@@ -9,13 +9,19 @@
  */
 session_start();
 get_header();
-//var_dump($wp->query_vars['category_name']);
+//var_dump($wp->query_vars['category_name']);//string(4) "chef"
+//var_dump(get_post_array('candymakingsupplies',-1))
+//get_search_form();
+//echo $_SERVER['PHP_SELF'];/bookstore/index.php
+//echo"**********";
+//bloginfo('home');http://localhost/bookstore
 
 ?>
 <div class="food" id="foodStorage">
     <div class="content">
         <section class="crumbs-nav">
-            <img src="<?php bloginfo('template_url')?>/images/home.png"> ><span><?php  single_cat_title(); ?></span>
+            <a href="<?php  echo home_url();?> "> </a> > <span><?php  single_cat_title(); ?></span>
+
         </section>
         <section class="main-content">
             <div class="container">
@@ -42,13 +48,15 @@ get_header();
                                                 <div class="cate-title"><?php  echo $key;?></div>
                                                 <?php
                                                 foreach($p as $value){
+                                                    $c_id=get_cat_ID($value);
+                                                    $count=count(get_post_array("",-1,$c_id));
                                                     ?>
 
                                                     <li><div class="select-type">
                                                             <input type="hidden" class="parent_box" name="parent_box" value="<?php  echo $key;?>">
                                                             <input type="hidden" class="hiddenbox" name="hiddenbox" value="<?php $admin_url=admin_url('admin-ajax.php');echo $admin_url;?>">
-                                                            <input type="checkbox" value="<?php echo $value ?>" name="<?php echo $value ?>" id="<?php echo $value ?>">
-                                                            <label for="<?php echo $value ?>"><a><?php echo $value ?>(20)</a></label>
+                                                            <input type="checkbox" value="<?php echo $value;?>" name="<?php echo $value;?>">
+                                                            <label for="<?php echo $value;?>"><a><?php echo $value ?>(<?php echo $count?>)</a></label>
                                                         </div>
                                                     </li>
                                                     <?php
@@ -82,12 +90,13 @@ get_header();
                                         <?php
                                         $result=get_post_array('new',8);
                                         foreach ($result as $i){
+                                            $detail_url=get_home_url()."/detail?id=".$i->ID;
                                             ?>
                                             <li>
                                                 <div class="content-container" >
                                                     <div class="left-block">
                                                         <div class="product-img-container">
-                                                            <a href="#">
+                                                            <a href="<?php echo $detail_url ?>">
                                                                 <img src="<?php  the_field('small1', $i->ID);?>">
                                                             </a>
                                                         </div>
@@ -117,13 +126,19 @@ get_header();
                         <div class="recommand-pro">
                             <?php
                             $result=get_post_array('recommend');
+                            $type=$wp->query_vars['category_name'];
+
                             foreach($result as $r){
                                 $type=$wp->query_vars['category_name'];
-                                $boo=  has_category($type,$r);
+                                $boo=  has_tag($type,$r);
+
                                 if($boo){
 
                                     ?>
                                     <div class="left">
+                                        <?php
+
+                                        ?>
                                         <img src="<?php the_field('recommang_pic', $r->ID); ?>">
                                     </div>
                                     <div class="right">
@@ -131,6 +146,25 @@ get_header();
                                         <label><?php the_field('recommend_text', $r->ID); ?></label>
                                     </div>
                                     <?php
+                                }else{
+                                    $type=explode("/",$type);
+                                    $sub_type=end($type);
+                                    $boo=  has_category($type,$r);
+                                    if($boo){
+
+                                        ?>
+                                        <div class="left">
+                                            <?php
+
+                                            ?>
+                                            <img src="<?php the_field('recommang_pic', $r->ID); ?>">
+                                        </div>
+                                        <div class="right">
+                                            <h3><?php echo single_cat_title() ?></h3>
+                                            <label><?php the_field('recommend_text', $r->ID); ?></label>
+                                        </div>
+                                        <?php
+                                    }
                                 }
                             }
                             ?>
@@ -140,7 +174,10 @@ get_header();
                                 <h3><?php echo  single_cat_title(); ?></h3>
                             </div>
                             <div class="right">
-                                Hay <?php var_dump(get_count('storrage')); ?> productos
+
+                                Hay <?php
+                                var_dump($type);
+                                echo(count(get_post_array($type,-1)));?> productos
                             </div>
                         </div>
 
@@ -160,8 +197,8 @@ get_header();
                                 Montrer
                                 <select class="max-show" id="max-show">
                                     <option value="9">9</option>
-                                    <option value="3">3</option>
-                                    <option value="45">45</option>
+                                    <option value="12">12</option>
+                                    <option value="24">24</option>
                                 </select>
 
                             </div>
@@ -177,10 +214,7 @@ get_header();
                                 <ul>
                                 </ul>
                             </div>
-                            <div class="right">
-                                <button>Afificher tout</button>
-                                <button>Comparar(0) > </button>
-                            </div>
+
 
                         </div>
                         <section class="food-img-list">

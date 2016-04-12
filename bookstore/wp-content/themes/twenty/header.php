@@ -38,8 +38,11 @@
                 </div>
                 <div class="search-box">
                     <div class="close">×</div>
-                    <input type="text" placeholder="Rechercher">
-                    <a></a>
+                    <form method="get" id="searchform" action="<?php bloginfo('home') ?>">
+                    <input name="s" id="s" type="text" placeholder="Rechercher">
+<!--                    <a  type="submit"></a>-->
+                    <input type="submit" id="searchsubmit" class="submit" value="">
+                    </form>
                 </div>
                 <div class="title col-md-5">
                     <img src="<?php bloginfo('template_url')?>/images/new-store-logo-1444050112.jpg">
