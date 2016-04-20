@@ -1,5 +1,6 @@
 
 <?php get_header();
+var_dump($_COOKIE);
 ?>
 <div class="index" id="index">
     <section class="new-product">
@@ -65,7 +66,10 @@
             <div class="row">
                 <ul>
                     <?php
-                    $result=get_post_array('popular',12);
+                    $query=new WP_Query('tag=hot');
+                    $result=$query->posts;
+
+//                    $result=get_post_array('popular',12);
                     foreach ($result as $i){
                         ?>
                         <li class="col-md-3">
@@ -135,7 +139,7 @@
                                     <div class="outter-content">
                                         <p>Kitchen Supplies store was founded by switer</p>
                                         <div class="button-container">
-                                            <a href="#"><span class="cart">ADD TO CART</span></a>
+                                            <a onclick=ajax_buy(<?php echo $i->ID; ?>)><span class="cart">ADD TO CART</span></a>
                                             <a href="#"><span class="more">MORE</span></a>
 
                                         </div>
@@ -177,7 +181,9 @@
             <div class="row">
                 <ul>
                     <?php
-                    $result=get_post_array('new',12);
+//                    $result=get_post_array('new',12);
+                    $query=new WP_Query('tag=new');
+                    $result=$query->posts;
                     foreach ($result as $i){
                         ?>
                         <li class="col-md-3">
@@ -247,7 +253,7 @@
                                     <div class="outter-content">
                                         <p>Kitchen Supplies store was founded by switer</p>
                                         <div class="button-container">
-                                            <a href="#"><span class="cart">ADD TO CART</span></a>
+                                            <a onclick=ajax_buy(<?php echo $i->ID; ?>)><span class="cart">ADD TO CART</span></a>
                                             <a href="#"><span class="more">MORE</span></a>
 
                                         </div>
@@ -289,21 +295,20 @@
             <div class="row">
                 <ul>
                     <?php
-                    for($i=0;$i<8;$i++){
+                    //                    $result=get_post_array('new',12);
+                    $query=new WP_Query('tag=new');
+                    $result=$query->posts;
+                    foreach ($result as $i){
                         ?>
-
                         <li class="col-md-3">
                             <div class="content-container" id="content-container">
                                 <div class="left-block">
                                     <div class="product-img-container">
                                         <a href="#">
-                                            <img src="<?php bloginfo('template_url')?>/images/old_a_1.jpg">
+                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
                                         </a>
                                         <div class="new-sale">
                                             NOUVEAU
-                                        </div>
-                                        <div class="hot-sale">
-                                            PROMO！
                                         </div>
                                     </div>
 
@@ -311,7 +316,7 @@
                                 <div class="right-block">
                                     <h5>EXPANDABLE_BAMBOOGADG_DAFDFFD</h5>
                                     <div class="content-price">
-                                        <span class="pro-price">$24.00</span>
+                                        <span class="pro-price"><?php the_field('price',$i->ID) ?></span>
                                         <span class="old-price">$30.00</span>
                                     </div>
 
@@ -324,20 +329,20 @@
                                 <div class="left-block">
                                     <div class="product-img-container">
                                         <a href="#">
-                                            <img src="<?php bloginfo('template_url')?>/images/old_a_1.jpg">
+                                            <img src="<?php  the_field('indexImg', $i->ID);?>">
                                         </a>
                                         <div class="sub-img">
                                             <ul>
                                                 <li><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/old_a_2.jpg">
+                                                        <img src="<?php  the_field('small1', $i->ID);?>">
                                                     </a>
                                                 </li>
                                                 <li class="sec-img"><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/old_a_3.jpg">
+                                                        <img src="<?php  the_field('small2', $i->ID);?>">
                                                     </a>
                                                 </li>
                                                 <li><a href="#">
-                                                        <img src="<?php bloginfo('template_url')?>/images/old_a_4.jpg">
+                                                        <img src="<?php  the_field('small3', $i->ID);?>">
                                                     </a>
                                                 </li>
                                             </ul>
@@ -348,9 +353,6 @@
                                     </div>
                                     <div class="new-sale">
                                         NOUVEAU
-                                    </div>
-                                    <div class="hot-sale">
-                                        PROMO！
                                     </div>
                                 </div>
                                 <div class="right-block">
@@ -365,16 +367,25 @@
                                     <div class="outter-content">
                                         <p>Kitchen Supplies store was founded by switer</p>
                                         <div class="button-container">
-                                            <a href="#"><span class="cart">ADD TO CART</span></a>
+                                            <a onclick=ajax_buy(<?php echo $i->ID; ?>)><span class="cart">ADD TO CART</span></a>
                                             <a href="#"><span class="more">MORE</span></a>
 
                                         </div>
                                         <div class="comments-note">
-                                            <div class="star-on"></div>
-                                            <div class="star-on"></div>
-                                            <div class="star-on"></div>
-                                            <div class="star-off"></div>
-                                            <div class="star-off"></div>
+                                            <?
+                                            for($n=0;$n<get_field('star',$i->ID);$n++){
+                                                ?>
+                                                <div class="star-on"></div>
+                                                <?php
+                                            }
+                                            for($m=0;$m<(5-get_field('star',$i->ID));$m++){
+                                                ?>
+                                                <div class="star-off"></div>
+                                                <?php
+                                            }
+
+                                            ?>
+
                                         </div>
                                     </div>
 
